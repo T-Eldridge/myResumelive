@@ -1,0 +1,143 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* This is header css */
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 150px;
+    background-color: #252525;
+    opacity: 40%;
+    padding-bottom: 0;
+}
+
+a {
+    position: relative;
+    text-transform: uppercase;
+    opacity: 1;
+    color: aliceblue;
+
+}
+
+a:hover {
+    color: black;
+    opacity: 1;
+}
+
+.links {
+    width: 600px;
+    display: flex;
+    position: relative;
+    left: 65%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+/* This is end of header */
+
+main {
+
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: url(./images/brickwall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+.nameplate {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    opacity: .8;
+    background-color: black;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.headshot {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    border: double white 10px;
+    justify-content: center;
+    
+
+}
+
+.headshot:hover #pic {
+    opacity: 60%;
+}
+
+.headshot:hover .greeting {
+    opacity: 1;
+}
+
+#pic {
+    width: 100%;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.greeting {
+    color: aliceblue;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    font-size: 30px;
+    transform: translate(-50%, -50%) ;
+    
+    
+}
+
+ /* This is start of footer */
+
+ footer {
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    background-color: #252525;
+    opacity: 40%;
+    color: aliceblue;
+
+    
+ }
+
+ footer > h2 {
+     font-size: 15px;
+ }
+
+
+ .socialLinks {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    left: 65%;
+ }
+
+ #social {
+     width: 20px;
+     height: 20px;
+ }
+
