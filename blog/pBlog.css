@@ -1,0 +1,247 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+/* This is header css */
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 150px;
+    background-color: #A8A8A8;
+    padding-bottom: 0;
+}
+
+.links > a {
+    position: relative;
+    text-transform: uppercase;
+    opacity: 1;
+    color: aliceblue;
+    background-color: slategrey;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    padding-top: 25px;
+    border: dotted black;
+
+}
+
+a:hover {
+    color: black;
+    background-color: cadetblue;
+}
+
+.links {
+    width: 600px;
+    display: flex;
+    position: relative;
+    left: 65%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bars {
+    display: none;
+    height: 20px;
+    width: 20px;
+    margin-right: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+
+/* This is end of header */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./../images/brickwall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+
+.article {
+    text-align: center;
+    width: 240px;
+    margin: 0 auto;
+}
+
+.article-one {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.article-two {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.article-three {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.article-four {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.article-five {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    opacity: .8;
+    
+}
+
+p {
+    background-color: #A8A8A8;
+    color: aliceblue;
+    opacity: .9;
+   
+}
+
+.more {
+    background-color: #A8A8A8;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: aliceblue;
+    opacity: .9;
+}
+
+#surprise {
+    width: 200px;
+}
+
+.surprise {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 200px;
+    margin: auto;
+    margin-left: 0px;
+    opacity: 0;
+
+}
+
+.surprise:hover {
+    opacity: 1;
+}
+
+.surprise-a {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    font-size: 45px;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.surprise-a:hover {
+    opacity: 1;
+}
+.surprise-b {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    font-size: 45px;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.surprise-b:hover {
+    opacity: 1;
+}
+
+.surprise-c {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    font-size: 45px;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.surprise-c:hover {
+    opacity: 1;
+}
+
+.surprise-d {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+    font-size: 45px;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.surprise-d:hover {
+    opacity: 1;
+}
+
+
+ /* This is start of footer */
+
+ footer {
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    background-color: #252525;
+    opacity: 40%;
+    color: aliceblue;
+
+    
+ }
+
+ footer > h2 {
+     font-size: 15px;
+ }
+
+
+ .socialLinks {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    left: 65%;
+ }
+
+ #social {
+     width: 20px;
+     height: 20px;
+ }
