@@ -13,17 +13,23 @@ header {
     padding-bottom: 0;
 }
 
-a {
+.links > a {
     position: relative;
     text-transform: uppercase;
     opacity: 1;
     color: aliceblue;
+    background-color: slategrey;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    padding-top: 25px;
+    border: dotted black;
 
 }
 
 a:hover {
     color: black;
-    
+    background-color: cadetblue;
 }
 
 .links {
