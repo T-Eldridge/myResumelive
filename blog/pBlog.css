@@ -20,7 +20,6 @@ header {
     text-transform: uppercase;
     opacity: 1;
     color: aliceblue;
-    background-color: slategrey;
     height: 50px;
     width: 100px;
     text-align: center;
@@ -93,28 +92,79 @@ main {
 .article-one {
     grid-row: 1/2;
     grid-column: 1/2;
+    position: relative;
+    animation-name: move; 
+    animation-duration: 6s;
+    transition: ease-in;
+
+}
+
+
+@keyframes move{
+    0% {left:-500px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+@keyframes moveb {
+    0% {right:-500px; top:0px;}
+    25%  {right:200px; top:0px;}
+    50%  { right:200px; top:200px;}
+    75%  { right:0px; top:200px;}
+    100% { right:0px; top:0px;}
+
+}
+
+@keyframes movec {
+    0%   {right:0px; top:-800px;}
+    25%  {right:0px; top:-400px;}
+    50%  { right:0px; top:0px;}
+    75%  { right:0px; top:200px;}
+    100% { right:0px; top:0px;}
+
 }
 
 .article-two {
     grid-row: 1/2;
     grid-column: 3/4;
+    position: relative;
+    animation-name: moveb; 
+    animation-duration: 6s;
+    transition: ease-in;
 }
+
+
 
 .article-three {
     grid-row: 2/3;
     grid-column: 2/3;
+    position: relative;
+    animation-name: movec;
+    animation-duration: 6s;
+    transition: ease-in;
 }
 
 .article-four {
     grid-row: 3/4;
     grid-column: 1/2;
+    position: relative;
+    animation-name: move; 
+    animation-duration: 6s;
+    transition: ease-in;
 }
 
 .article-five {
     display: grid;
     grid-row: 3/4;
     grid-column: 3/4;
+    position: relative;
+    animation-name: moveb; 
+    animation-duration: 6s;
+    transition: ease-in;
 }
+
 
 h2 {
     text-align: center;
@@ -142,15 +192,15 @@ p {
 
 #surprise {
     width: 200px;
+    filter: grayscale(50%);
 }
 
 .surprise {
-    grid-row: 1/2;
-    grid-column: 1/2;
+   
     width: 200px;
-    margin: auto;
     margin-left: 0px;
     opacity: 0;
+    
 
 }
 
@@ -245,3 +295,4 @@ p {
      width: 20px;
      height: 20px;
  }
+ /*End of Footer/* 
