@@ -9,7 +9,7 @@ header {
     display: flex;
     width: 100vw;
     height: 150px;
-    background-color: #A8A8A8;
+    background-image: url(./images/brickwall.jpg);
     padding-bottom: 0;
 }
 
@@ -17,18 +17,21 @@ header {
     position: relative;
     text-transform: uppercase;
     opacity: 1;
-    color: aliceblue;
+    color: white;
     height: 50px;
     width: 100px;
     text-align: center;
     padding-top: 25px;
-    border: dotted black;
+    background: #000;
+    filter: opacity(.8);
+    
 
 }
 
 a:hover {
     color: black;
     background-color: cadetblue;
+    
 }
 
 .links {
@@ -38,6 +41,7 @@ a:hover {
     left: 65%;
     justify-content: space-between;
     align-items: center;
+    
     
 }
 
@@ -79,7 +83,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(100%);
     margin-top: 0;
     padding-top: 0;
 
