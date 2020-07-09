@@ -82,6 +82,13 @@ main {
     background-size: cover;
 }
 
+.resume {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    left: 30%;
+}
+
 /* This is start of footer */
 
 footer {
