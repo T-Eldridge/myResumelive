@@ -296,4 +296,180 @@ p {
      width: 20px;
      height: 20px;
  }
- /*End of Footer/* 
+ /* end footer  */
+
+ @media (max-width: 1024px){
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    
+    
+    main {
+        display: grid;
+        width: 100vw;
+        height: 1450px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2fr, 1fr);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .mobile-b {
+        display: block;
+    }
+
+    .bars {
+        display: block;
+        color: black;
+        background-color: aliceblue;
+        position: relative;
+        left: 50%;
+        
+        
+    }
+
+    .dropdown {
+        height: 20px;
+        position: relative;
+        left: 30%;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: black;
+        
+    
+    }
+
+ 
+
+    .socialLinks {
+        position: relative;
+        left: 5%;
+    }
+
+    a {
+        color: aliceblue;
+    }
+
+  
+
+    
+
+}
+
+@media (max-width: 800px){
+    .dropdown {
+        left: 23%;
+    }
+}
+
+@media (max-width: 700px){
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+    main {
+      height: 1950px;
+      grid-template-areas: repeat(40%, 20%);
+      
+    }
+
+    .dropdown {
+      position: relative;
+      left: 5px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+
+    .article {
+        position: relative;
+        left: 40%;
+        height: 300px;
+
+    }
+
+    .article-one {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        animation-name: move;
+        
+    }
+
+    .article-two {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        animation-name: move;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .article-three {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        animation-name: move;
+        height: 300px;
+    }
+
+    .article-four {
+        grid-column: 1/2;
+        grid-row: 7/8;
+        animation-name: move;
+        height: 300px;
+    }
+
+    .article-five {
+        grid-column: 1/2;
+        grid-row: 9/10;
+        animation-name: move;
+        height: 300px;
+    }
+
+    .surprise-a {
+        
+        grid-row: 2/3;
+        left: 40%;
+        position: relative;
+        margin: 0;
+        height: 120px;
+    }
+
+    .surprise-b {
+        grid-row: 4/5;
+        left: 40%;
+        position: relative;
+        margin: 0;
+    }
+
+    .surprise-c {
+        grid-row: 6/7;
+        left: 40%;
+        position: relative;
+    }
+
+    .surprise-d {
+        grid-row: 8/9;
+        left: 40%;
+        position: relative;
+    }
+
+    @keyframes move{
+        0% { left:0px; top:-100px;}
+      25%  {left:0px; top:0px;}
+      50%  { left:0px; top:100px;}
+      75%  { left:0px; top:200px;}
+      100% { left:0px; top:0px;}
+    }
+
+  
+   
+}
+

@@ -200,4 +200,100 @@ a:hover {
      width: 20px;
      height: 20px;
  }
- /*End of Footer/* 
+
+ /* end footer */
+
+  @media (max-width: 1024px){
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    
+    
+    main {
+        width: 100vw;
+        height: 1450px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .mobile-b {
+        display: block;
+    }
+
+    .bars {
+        display: block;
+        color: black;
+        background-color: aliceblue;
+        position: relative;
+        left: 50%;
+        
+        
+    }
+
+    .dropdown {
+        height: 20px;
+        position: relative;
+        left: 35%;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: black;
+        
+    
+    }
+
+ 
+
+    .socialLinks {
+        position: relative;
+        left: 5%;
+    }
+
+    a {
+        color: aliceblue;
+    }
+
+  
+
+    
+
+}
+
+@media (max-width: 800px){
+  .dropdown {
+    left: 30%;
+  }
+
+}
+
+@media (max-width: 750px){
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+    main {
+      height: 2250px;
+      
+    }
+
+    .dropdown {
+      position: relative;
+      left: 10%;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+
+
+
+  
+   
+}

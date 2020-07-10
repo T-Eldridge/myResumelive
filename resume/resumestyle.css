@@ -87,8 +87,32 @@ main {
     height: 800px;
     position: relative;
     left: 30%;
+    
 }
 
+.git {
+    width: 250px;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 0;
+    text-align: center;
+    filter: opacity(.9);
+    position: relative;
+    left: 8%;
+    top: 50%;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.gitH {
+    color: teal;
+}
+
+.linked {
+    display: none;
+}
 /* This is start of footer */
 
 footer {
@@ -120,3 +144,164 @@ footer {
      width: 20px;
      height: 20px;
  }
+
+ @media (max-width: 1024px){
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    
+    
+    main {
+        
+        width: 100vw;
+        height: 1450px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2fr, 1fr);
+       
+    }
+
+    .links {
+        display: none;
+    }
+
+    .mobile-b {
+        display: block;
+    }
+
+    .bars {
+        display: block;
+        color: black;
+        background-color: aliceblue;
+        position: relative;
+        left: 50%;
+        
+        
+    }
+
+    .dropdown {
+        height: 20px;
+        position: relative;
+        left: 50%;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: black;
+        
+    
+    }
+
+    .resume {
+        position: relative;
+        height: 600px;
+        width: 500px;
+        left: 25%;
+        top: 0px;
+        
+    }
+
+    .git{
+        position: relative;
+        left: 38%;
+        top: 60%;
+    }
+
+ 
+
+    .socialLinks {
+        position: relative;
+        left: 5%;
+    }
+
+    a {
+        color: aliceblue;
+    }
+
+  
+
+    
+
+}
+
+@media (max-width: 800px){
+
+    body {
+        width: 100vw;
+        height: 1024px;
+    }
+
+    main {
+        width: 100%;
+    }
+    .dropdown {
+        left: 50%;
+    }
+    .git {
+        position: relative;
+        height: 150px;
+        left: 35%;
+        bottom: 0;
+    }
+
+    .resume{
+        display: block;
+        height: 500px;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 700px){
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+    main {
+        
+      height: 800px;
+      grid-template-areas: repeat(40%, 20%);
+      
+    }
+
+    .git{
+        top: 5%;
+        left: 25%;
+    }
+
+    .linked {
+        display: block;
+        width: 250px;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 0;
+    text-align: center;
+    filter: opacity(.9);
+    position: relative;
+    left: 25%;
+    top: 20%;
+    }
+
+    .resume{
+        display: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      left: 50%;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+
+
+   
+  
+   
+}

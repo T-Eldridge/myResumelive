@@ -140,6 +140,9 @@ h1 {
     
 }
 
+
+
+
 span {
     display: flex;
     flex-direction: column;
@@ -223,7 +226,7 @@ span > p {
     
     main {
         width: 100vw;
-        height: 100vh;
+        height: 100%;
     }
 
     .links {
@@ -237,7 +240,7 @@ span > p {
     .bars {
         display: block;
         color: black;
-       
+        background-color: aliceblue;
         
     }
 
@@ -265,11 +268,41 @@ span > p {
         color: aliceblue;
     }
 
+    span {
+        width: 400px;
+        left: 30%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     .greeting {
-        top: 45%;
+        top: 70%;
+
+    }
+
+    span {
+        left: 30%;
+        width: 300px;
+    }
+}
+
+@media (max-width: 750px){
+    main {
+        width: 100vw;
+        height: 1000px;
+    
+    }
+
+    span {
+        left: 15%;
+    }
+
+   span >  p {
+        font-size: 16px;
     }
 }
